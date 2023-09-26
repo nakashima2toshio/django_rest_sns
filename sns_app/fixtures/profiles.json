@@ -1,0 +1,22 @@
+[
+    {
+        "custom_user": 1,
+        "display_name": "Alice",
+        "bio": "Hello, I'm Alice! I love traveling and photography."
+    },
+    {
+        "custom_user": 2,
+        "display_name": "Bob",
+        "bio": "Hi, I'm Bob! I enjoy playing sports and trying new foods."
+    },
+    {
+        "custom_user": 3,
+        "display_name": "Carol",
+        "bio": "Hey, I'm Carol! I'm a software engineer and a tech enthusiast."
+    },
+    {
+        "custom_user": 4,
+        "display_name": "Dave",
+        "bio": "Hi, I'm Dave! I'm a musician and an animal lover."
+    }
+]

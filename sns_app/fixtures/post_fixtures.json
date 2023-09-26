@@ -1,0 +1,11 @@
+[
+  {
+    "model": "sns_app.post",
+    "pk": 1,
+    "fields": {
+      "author": 1,
+      "content": "This is my first post!",
+      "created_at": "2023-04-01T10:00:00Z"
+    }
+  }
+]

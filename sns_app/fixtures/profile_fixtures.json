@@ -1,0 +1,11 @@
+[
+  {
+    "model": "sns_app.profile",
+    "pk": 1,
+    "fields": {
+      "custom_user": 1,
+      "display_name": "John Doe",
+      "bio": "Hello, I'm John Doe!"
+    }
+  }
+]
