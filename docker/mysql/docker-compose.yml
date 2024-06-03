@@ -1,0 +1,21 @@
+
+version: '3'
+
+services:
+  mysql:
+    image: mysql:latest
+    hostname: mysql_host
+    container_name: mysql_container
+    environment:
+      MYSQL_ROOT_PASSWORD: password   #rootユーザのパスワード
+      MYSQL_USER: root               #ユーザアカウント
+      MYSQL_PASSWORD: password        #ユーザアカウントのパスワード
+      MYSQL_DATABASE: mysql_db        #DB名
+      TZ: "Asia/Tokyo"
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    ports:
+      - 3306:3306
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+      - ./mysql/sql:/docker-entrypoint-initdb.d
+      - ./mysql/my.cnf:/etc/mysql/conf.d/my.cnf

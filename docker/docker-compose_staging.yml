@@ -1,0 +1,51 @@
+version: '3'
+
+#from django.conf import settings
+#from django.conf.urls.static import static
+#urlpatterns = [
+#    # -- 省略 --
+#]
+#urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+services:
+  webServer:
+      image: nginx
+      container_name: 'webServer'
+      volumes:
+        - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+        - ./nginx/uwsgi_params:/etc/nginx/uwsgi_params
+        - ./django/src/app/static:/static    # 前手順で追加した設定
+      ports:
+        - 80:80
+      depends_on:
+        - python
+
+  python:
+      build: ./django_rest_sns
+      container_name: 'ap_server'
+      command: uwsgi --socket :8001 --module mysite.wsgi --py-autoreload 1 --logto /tmp/uwsgi.log
+      volumes:
+        - ./django_server/django/src:/code
+        - ./django_server/django/log:/tmp
+      expose:
+        - "8001"
+      depends_on:
+        - db_server
+
+  postgres:
+    image: postgres:latest
+    hostname: postgres_host
+    container_name: postgres_container
+    environment:
+      POSTGRES_PASSWORD: password  #スーパーユーザ(postgres)のパスワード
+      POSTGRES_USER: admin         #ユーザアカウント
+      POSTGRES_DB: postgres_db     #DB名
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
+      DATABASE_HOST: localhost
+      TZ: "Asia/Tokyo"
+    ports:
+      - 5432:5432
+    user: admin
+    volumes:
+      - ./postgres/data:/var/lib/postgresql/data    # ※ホストOSで永続化
+      - ./postgres/sql:/docker-entrypoint-initdb.d  # 初期データ投入

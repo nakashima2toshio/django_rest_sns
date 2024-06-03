@@ -1,0 +1,42 @@
+[
+    {
+        "custom_user": 2,
+        "post": 1,
+        "timestamp": "2023-04-02T10:30:00Z"
+    },
+    {
+        "custom_user": 3,
+        "post": 1,
+        "timestamp": "2023-04-02T10:45:00Z"
+    },
+    {
+        "custom_user": 1,
+        "post": 3,
+        "timestamp": "2023-04-02T12:30:00Z"
+    },
+    {
+        "custom_user": 3,
+        "post": 3,
+        "timestamp": "2023-04-02T12:45:00Z"
+    },
+    {
+        "custom_user": 1,
+        "post": 5,
+        "timestamp": "2023-04-02T14:30:00Z"
+    },
+    {
+        "custom_user": 2,
+        "post": 5,
+        "timestamp": "2023-04-02T14:45:00Z"
+    },
+    {
+        "custom_user": 1,
+        "post": 7,
+        "timestamp": "2023-04-02T16:30:00Z"
+    },
+    {
+        "custom_user": 3,
+        "post": 7,
+        "timestamp": "2023-04-02T16:45:00Z"
+    }
+]

@@ -1,0 +1,2 @@
+python manage.py loaddata api/init_data/custom_users.json
+python manage.py loaddata sns_app/init_data/profiles.json

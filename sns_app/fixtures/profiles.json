@@ -1,0 +1,38 @@
+[
+  {
+    "model": "sns_app.profile",
+    "pk": 1,
+    "fields": {
+      "custom_user": 1,
+      "display_name": "Admin",
+      "bio": "Hello, I'm the admin user."
+    }
+  },
+  {
+    "model": "sns_app.profile",
+    "pk": 2,
+    "fields": {
+      "custom_user": 2,
+      "display_name": "Tom",
+      "bio": "Hello, I'm Tom. Nice to meet you!"
+    }
+  },
+  {
+    "model": "sns_app.profile",
+    "pk": 3,
+    "fields": {
+      "custom_user": 3,
+      "display_name": "Alice",
+      "bio": "Hello, I'm Alice. I love programming!"
+    }
+  },
+  {
+    "model": "sns_app.profile",
+    "pk": 4,
+    "fields": {
+      "custom_user": 4,
+      "display_name": "Bob",
+      "bio": "Hi, I'm Bob. I'm a software engineer."
+    }
+  }
+]

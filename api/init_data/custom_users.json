@@ -1,0 +1,54 @@
+[
+  {
+    "model": "api.customuser",
+    "pk": 1,
+    "fields": {
+      "username": "admin",
+      "email": "admin@example.com",
+      "first_name": "Admin",
+      "last_name": "User",
+      "is_active": true,
+      "is_staff": true,
+      "is_superuser": true
+    }
+  },
+  {
+    "model": "api.customuser",
+    "pk": 2,
+    "fields": {
+      "username": "tom",
+      "email": "tom@example.com",
+      "first_name": "Tom",
+      "last_name": "Smith",
+      "is_active": true,
+      "is_staff": false,
+      "is_superuser": false
+    }
+  },
+  {
+    "model": "api.customuser",
+    "pk": 3,
+    "fields": {
+      "username": "alice",
+      "email": "alice@example.com",
+      "first_name": "Alice",
+      "last_name": "Johnson",
+      "is_active": true,
+      "is_staff": false,
+      "is_superuser": false
+    }
+  },
+  {
+    "model": "api.customuser",
+    "pk": 4,
+    "fields": {
+      "username": "bob",
+      "email": "bob@example.com",
+      "first_name": "Bob",
+      "last_name": "Williams",
+      "is_active": true,
+      "is_staff": false,
+      "is_superuser": false
+    }
+  }
+]

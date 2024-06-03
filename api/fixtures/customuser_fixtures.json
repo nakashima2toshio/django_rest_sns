@@ -1,0 +1,12 @@
+[
+  {
+    "model": "api.customuser",
+    "pk": 2,
+    "fields": {
+      "username": "user1",
+      "email": "user1@example.com",
+      "first_name": "John",
+      "last_name": "Doe"
+    }
+  }
+]

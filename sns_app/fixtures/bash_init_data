@@ -1,0 +1,5 @@
+# python manage.py loaddata sns_app/fixtures/profiles.json
+# python manage.py loaddata sns_app/fixtures/post.json
+# python manage.py loaddata sns_app/fixtures/like.json
+# python manage.py loaddata sns_app/fixtures/comment.json
+# python manage.py loaddata sns_app/fixtures/follow.json

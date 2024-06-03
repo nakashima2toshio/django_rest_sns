@@ -1,0 +1,11 @@
+[
+  {
+    "model": "sns_app.follow",
+    "pk": 1,
+    "fields": {
+      "follower": 1,
+      "followed": 2,
+      "timestamp": "2023-04-01T10:10:00Z"
+    }
+  }
+]
