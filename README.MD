@@ -1,4 +1,6 @@
 ##### （認証）dj_rest_auth　←　Django-rest-auth に伴い、認証関連は、更新中です。
+##### With the migration of the library from Django-rest-auth to dj_rest_auth, the authentication-related aspects of this project are being updated.
+"Thanks to everyone at Django-rest-auth for their support. To those who forked Django-rest-auth and are developing "dj_rest_auth", thank you!
 
 ### [django_rest_sns]プロジェクト
 
